@@ -11,7 +11,7 @@ s.bind((ip,port))
 s.settimeout(TIMEOUT) 
 
 while True: 
-	r = s.recvfrom(1000) 
+	r = s.recvfrom(500) 
 	print(r)
 	print("receive from client : " + r[0]) 
 	reply = raw_input('server : ') 

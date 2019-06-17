@@ -10,7 +10,7 @@ s.settimeout(TIMEOUT)
 while True: 
 	message = raw_input("Client : ") 
 	s.sendto(message,(ip,port))  
-	t= s.recvfrom(1000)
+	t= s.recvfrom(500)
 	print("Receive from Server: " +t[0]) 
 	user=raw_input("Do you want to quit : Y/N") 
 	#If user type(Y) then exit with connection from the user. 
